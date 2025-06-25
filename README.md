@@ -217,7 +217,7 @@ MODEL:
 如果您在研究中使用了本模型，请引用：
 
 ```bibtex
-@article{pvrcnn_iassd_2025,
+@article{VoteVoxelRCNN_2025,
     title={VoteVoxelRCNN: A Two-Stage 3D Object Detection Framework},
     author={ITSRC},
     journal={**},
