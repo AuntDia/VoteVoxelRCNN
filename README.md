@@ -1,4 +1,4 @@
-# PVRCNN-IASSD: 两阶段3D目标检测模型
+# VoteVoxelRCNN: 两阶段3D目标检测模型
 
 [![Python](https://img.shields.io/badge/Python-3.7+-blue.svg)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-1.8+-orange.svg)](https://pytorch.org/)
@@ -6,11 +6,11 @@
 
 ## 📖 项目简介
 
-PVRCNN-IASSD是一个创新的两阶段3D目标检测模型，以**PVRCNN**的体素化检测流程作为第一阶段生成高质量proposals，并在第二阶段结合**IASSD**的实例感知点云特征提取和**PVRCNN**的精确ROI refinement技术。该模型基于OpenPCDet框架开发，支持KITTI和Waymo Open Dataset的训练和评估。
+VoteVoxelRCNN是一个创新的两阶段3D目标检测模型，以体素化检测流程作为第一阶段生成高质量proposals，并在第二阶段结合点云投票特征提取和**ROI refinement**技术。该模型基于OpenPCDet框架开发，支持KITTI和Waymo Open Dataset的训练和评估。
 
 ### 🎯 核心特性
 
-- **混合架构**: 第一阶段采用PVRCNN体素化检测，第二阶段结合IASSD backbone和PVRCNN ROI head
+- **混合架构**: 第一阶段采用体素化检测，第二阶段结合Point2Vote 和 ROI head
 - **高效训练**: 端到端训练，无需复杂的两阶段训练策略
 - **多数据集支持**: 完全支持KITTI和Waymo数据集
 - **模块化设计**: 易于扩展和定制的组件化架构
@@ -24,7 +24,7 @@ PVRCNN-IASSD是一个创新的两阶段3D目标检测模型，以**PVRCNN**的�
 | ---------------------- | --------------- | --------------- | --------------- |
 | PVRCNN                 | 90.25           | 81.43           | 76.82           |
 | IASSD                  | 91.12           | 82.48           | 77.90           |
-| **PVRCNN-IASSD** | **92.15** | **83.72** | **79.01** |
+| **VoteVoxelRCNN** | **92.15** | **83.72** | **79.01** |
 
 #### Waymo数据集 (Level 2 mAPH)
 
@@ -32,12 +32,12 @@ PVRCNN-IASSD是一个创新的两阶段3D目标检测模型，以**PVRCNN**的�
 | ---------------------- | -------------- | -------------- | -------------- |
 | PVRCNN                 | 75.8           | 65.2           | 65.4           |
 | IASSD                  | 77.5           | 67.8           | 68.1           |
-| **PVRCNN-IASSD** | **79.2** | **69.5** | **70.3** |
+| **VoteVoxelRCNN** | **79.2** | **69.5** | **70.3** |
 
 ## 📁 项目结构
 
 ```
-PVRCNN-IASSD/
+VoteVoxelRCNN/
 ├── 📁 code/                          # 核心代码实现
 │   ├── pvrcnn_iassd_detector.py      # 主检测器类
 │   ├── train_pvrcnn_iassd.py         # 训练脚本
@@ -60,8 +60,8 @@ PVRCNN-IASSD/
 
 ```bash
 # 克隆项目
-git clone https://github.com/your-repo/IASSD-PVRCNN.git
-cd IASSD-PVRCNN
+git clone https://github.com/your-repo/VoteVoxelRCNN.git
+cd VoteVoxelRCNN
 
 # 安装依赖
 pip install torch torchvision torchaudio
@@ -222,7 +222,7 @@ MODEL:
 
 ```bibtex
 @article{pvrcnn_iassd_2025,
-    title={PVRCNN-IASSD: A Two-Stage 3D Object Detection Framework},
+    title={VoteVoxelRCNN: A Two-Stage 3D Object Detection Framework},
     author={ITSRC},
     journal={**},
     year={2025}
