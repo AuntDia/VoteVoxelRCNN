@@ -45,10 +45,6 @@ VoteVoxelRCNN/
 │   ├── demo_inference.py             # 演示推理脚本
 │   ├── kitti_pvrcnn_iassd.yaml       # KITTI配置文件
 │   └── waymo_pvrcnn_iassd.yaml       # Waymo配置文件
-├── 📁 docs/                          # 项目文档
-│   ├── OpenPCDet_PVRCNN_IASSD_Analysis_Report.md  # 技术分析报告
-│   ├── Model_Architecture_Design.md  # 模型架构设计文档
-│   └── IASSD_PVRCNN_Usage_Guide.md   # 详细使用指南
 ├── 📁 OpenPCDet/                     # OpenPCDet框架 (子模块)
 ├── 📁 IA-SSD/                        # IASSD项目 (子模块)
 └── README.md                         # 项目说明文档
