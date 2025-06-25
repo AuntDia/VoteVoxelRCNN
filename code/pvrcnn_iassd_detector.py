@@ -3,8 +3,7 @@ PVRCNN-IASSD 两阶段目标检测器
 第一阶段：PVRCNN的体素化检测流程生成proposals
 第二阶段：IASSD backbone进行点云特征提取 + PVRCNN ROI Head进行refinement
 
-作者: MiniMax Agent
-日期: 2025-06-22
+作者: ITSRC
 """
 
 import torch
