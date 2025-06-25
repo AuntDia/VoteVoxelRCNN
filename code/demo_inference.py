@@ -4,8 +4,7 @@ PVRCNN-IASSD 模型推理演示脚本
 快速演示如何使用训练好的模型进行3D目标检测推理
 第一阶段：PVRCNN体素化检测  第二阶段：IASSD特征提取 + PVRCNN ROI Head
 
-作者: MiniMax Agent
-日期: 2025-06-22
+作者: ITSRC
 """
 
 import argparse
